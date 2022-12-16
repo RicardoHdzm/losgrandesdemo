@@ -12,6 +12,12 @@ html, body {
 }
 
 @font-face {
+    font-family: GrandesFontR;
+    src: url(../fonts/GT-America-Expanded-Regular.ttf);
+}
+
+
+@font-face {
     font-family: Quickpen;
     src: url(../fonts/Quickpen.otf);
 }
@@ -23,8 +29,8 @@ html, body {
 }
 
 h5{
-	font-family: 'Roboto' sans-serif;
-	font-weight: 400;
+	font-family: 'GrandesFontR';
+	font-size: 18px;
 }
 
 h5 > a {
@@ -38,11 +44,7 @@ h2 {
 
 h4{
 	font-family: GrandesFont;
-}
-
-h5{
-	font-family: GrandesFont;
-	text-align: center;
+	text-transform: uppercase;
 }
 
 h6 > a{
@@ -74,6 +76,12 @@ h6 > a{
 	margin-top: -20px;
 	padding-left:20px;
   padding-right:20px;
+}
+
+
+.logo-nav-small{
+	width: 100px;
+
 }
 
 .banner{
@@ -291,6 +299,10 @@ p{
  	.big{
  		font-size: 3em;
  	}
+ 	.showlogo{
+ 		display: inline!important;
+ 		width: 50px;
+ 	}
  }
 
  .map-container{
@@ -337,4 +349,34 @@ p{
 
 option{
 	background-color: black;
+}
+
+.carousel-fade .carousel-item {
+ opacity: 0;
+ transition-duration: .8s;
+ transition-property: opacity;
+}
+
+.carousel-fade  .carousel-item.active,
+.carousel-fade  .carousel-item-next.carousel-item-left,
+.carousel-fade  .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-right {
+ opacity: 0;
+}
+
+.carousel-fade  .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade  .active.carousel-item-prev {
+ transform: translateX(0);
+ transform: translate3d(0, 0, 0);
+}
+
+.showlogo{
+	display: none;
 }
